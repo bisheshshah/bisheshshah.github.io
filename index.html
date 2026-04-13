@@ -2434,4 +2434,4 @@ B//Z" alt="Bishesh Shah" class="hero-photo">
         const obs = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
         }, { threshold: 0.1 });
-        document.querySelectorAll(
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
